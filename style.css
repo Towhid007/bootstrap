@@ -1,0 +1,87 @@
+    body {
+        background-image: url(b.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    #main-wrapper {
+        color: white;
+        width: 500px;
+        margin-left: 800px;
+        padding: 4px;
+    }
+    
+    .avatar {
+        width: 100px;
+        border-radius: 50%;
+    }
+    
+    .myform {
+        color: white;
+        width: 450px;
+        margin-left: 100px;
+        font-weight: 100;
+    }
+    
+    .inputvalues {
+        font-family: 'Courier New', Courier, monospace;
+        width: 300px;
+        text-align: initial;
+        margin: 0 auto;
+        padding: 6px;
+        background-color: rgba(12, 229, 236, 0.959);
+    }
+    
+    #login-btn {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(18, 199, 33);
+        width: 50%;
+        padding: 8px;
+        font-size: 18px;
+        font-weight: 100;
+        color: white;
+    }
+    
+    #register-btn {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: blue;
+        width: 50%;
+        padding: 8px;
+        font-size: 18px;
+        font-weight: 100;
+        color: white;
+    }
+    
+    #signup-btn {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(45, 18, 199);
+        width: 50%;
+        padding: 8px;
+        font-size: 18px;
+        font-weight: 100;
+        color: white;
+    }
+    
+    #back-btn {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(179, 19, 19);
+        width: 50%;
+        padding: 8px;
+        font-size: 18px;
+        font-weight: 100;
+        color: white;
+    }
+    
+    #logout-btn {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(252, 0, 42);
+        width: 50%;
+        padding: 8px;
+        font-size: 18px;
+        font-weight: 100;
+        color: white;
+        margin-left: 40px;
+    }
