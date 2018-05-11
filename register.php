@@ -8,6 +8,10 @@
     */
 ?>
 
+                <ul>
+                    <li><a href="homepage1.php">home</a></li>
+                </ul>
+
 
 <!DOCTYPE html>
 <html>
@@ -15,7 +19,7 @@
 
 	<title>Registration Page</title>
 
-	<link rel="stylesheet" type="text/css"  href="style.css" />
+	<link rel="stylesheet" type="text/css"  href="style1.css" />
 
 </head>
 <body>
@@ -49,7 +53,7 @@
                 <option value="MCA" > MCA </option>
              </select> <br> <br>
 			<input name = "submit-btn" type = "submit" id = "signup-btn" value = "sign Up"> <br> <br>
-           <a href = "index.php"> <input type = "button" id = "back-btn" value ="back" > </a>
+           <a href = "login.php"> <input type = "button" id = "back-btn" value ="back" > </a>
             
 			
             </form>

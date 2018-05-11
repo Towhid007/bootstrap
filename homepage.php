@@ -10,7 +10,7 @@
 
 	<title>Home Page</title>
 
-	<link rel="stylesheet" type="text/css"  href="style.css" />
+	<link rel="stylesheet" type="text/css"  href="style1.css" />
 
 </head>
 <body>
@@ -43,7 +43,7 @@
 			
 				if(isset($_POST['logout'])){
 					session_destroy();
-					header('location:index.php');
+					header('location:login.php');
 				}
 			
 			?>
