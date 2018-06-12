@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Tooltips | Bootstrap 4</title>
+</head>
+
+<body>
+    <h1 class="display-3 text-center my-4">Popovers</h1>
+    <div class="container">
+        <!--########################START HERE#########################-->
+
+        <!-- POPOVER -->
+        <button class="btn btn-sm btn-primary" title="Hello world!!" data-toggle="popover" data-content="lorem ipsum habijabi hellow world in popover. without lorem ipsum donert?" data-placement="top">Popover</button>
+
+        <button class="btn btn-sm btn-warning" title="Hello world!!" data-toggle="popover" data-content="lorem ipsum habijabi hellow world in popover. without lorem ipsum donert?" data-placement="right">Popover</button>
+
+        <button class="btn btn-sm btn-danger" title="Hello world!!" data-toggle="popover" data-content="lorem ipsum habijabi hellow world in popover. without lorem ipsum donert?" data-placement="left">Popover</button>
+
+
+        <button id="#mypoPover1" class="btn btn-sm btn-info" title="Hello world!!" data-toggle="popover" data-content="lorem ipsum habijabi hellow world in popover. without lorem ipsum donert?" data-placement="bottom">Popover</button>
+        <br>
+        <hr>
+        <!-- DISMISSIBLE POPOVER -->
+        <button id="popid" class="btn btn-sm btn-success" title="Hello world!!" data-toggle="popover" data-content="lorem ipsum habijabi hellow world in popover. without lorem ipsum donert?" data-placement="right" data-trigger="focus">Popover1</button>
+        <!--data-trigger="focus" use korle baire click korle popover chole jabe-->
+        <br>
+        <hr>
+        <!-- Control with JS-->
+        <button class="btn btn-sm btn-secondary" onclick="showPopover()"> show popover</button>
+
+        <!--HIDE POPOVER-->
+        <button class="btn btn-sm btn-primary" onclick="hidePopover()"> hide popover</button>
+
+        <!--TOGGLE POPOVER SHOW+HIDE-->
+        <button class="btn btn-sm btn-outline-success" onclick="togglePopover()"> toggle popover</button>
+
+        <div style="margin-top:500px;"></div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+        <script>
+            $('[data-toggle="popover"]').popover();
+
+            function showPopover() {
+                $('#popid').popover('show');
+            }
+
+            function hidePopover() {
+                $('#popid').popover('hide');
+            }
+
+            function togglePopover() {
+                $('#popid').popover('toggle');
+            }
+        </script>
+</body>
+
+</html>

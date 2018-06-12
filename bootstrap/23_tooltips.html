@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Collapse & Accordion | Bootstrap 4</title>
+</head>
+
+<body>
+    <h1 class="display-4 text-center my-4">Collapse & Accordion</h1>
+
+    <div class="container">
+        <!--########################START HERE#########################-->
+
+        <!--TOOLTIPS-->
+        <button class="btn btn-primary" title="hello world" data-placement="Top" data-toggle="tooltip"> Button on Top</button>
+
+        <button class="btn btn-primary" title="hello world" data-placement="left" data-toggle="tooltip"> Button on Left</button>
+
+        <button class="btn btn-primary" title="hello world" data-placement="right" data-toggle="tooltip"> Button on Right</button>
+
+        <button class="btn btn-primary mt-2" title="hello world" data-placement="bottom" data-toggle="tooltip"> Button Bottom </button>
+        <br> <br>
+
+        <!--TOOLTIPS WITH HTML-->
+
+        <button id="hello" class="btn btn-warning mt-2" data-html="true" title="<h3> hello world </h3> <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, vero! </p>" data-placement="top" data-toggle="tooltip"> Button up Bold</button>
+        <br>
+        <hr>
+
+        <!--TRIGGER WITH JS-->
+        <button class="btn btn-success" onclick="showToolTip()"> Show on button up Bold </button>
+
+        <button class="btn btn-info" onclick="hideToolTip()"> Hide from bottom up Bold </button>
+        <br> <br>
+
+        <button class="btn btn-info mb-md-3" onclick="toggleToolTip()"> hide/show</button>
+
+
+
+    </div>
+
+    <div style="margin-top:500px;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+    <!--JQUERY FOR SHOWING THE TITLES ON TOP/LEFT/RIGHT ETC-->
+    <script>
+        $('[data-toggle="tooltip"]').tooltip();
+        //used for showing the title on the top
+        //uporer attribute ta ekhane use kora hoyeche
+
+        //FOR SHOW ON THE TOP BY ANOTHER BUTTON
+        function showToolTip() {
+            $('#hello').tooltip('show');
+        }
+        //FOR HIDE FROM THE TOP BY ANOTHER BUTTON
+
+        function hideToolTip() {
+            $('#hello').tooltip('hide');
+        }
+        //FOR SHOW AND HIDE BY ONE BUTTON
+        function toggleToolTip() {
+            $('#hello').tooltip('toggle');
+        }
+    </script>
+
+</body>
+
+</html3
